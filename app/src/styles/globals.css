@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+/*  don't show the scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
