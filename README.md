@@ -1,2 +1,1 @@
-# mayorwhiskers
-# first commit
+# Mayor Whiskers
