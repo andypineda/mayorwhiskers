@@ -67,6 +67,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+      {/* Bottom banner */}
+      <div style={{ position: "fixed", bottom: 0, width: "100%", backgroundColor: "#000", color: "#fff", textAlign: "center", padding: "10px", zIndex: 9999, fontFamily: "sans-serif", fontSize: "14px" }}>
+        <p style={{ margin: 0 }}>Contact: mayorwhisker@gmail.com</p>
+      </div>
     </>
   );
 }
