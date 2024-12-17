@@ -23,7 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       {/* Verification Banner */}
       <div
         style={{
@@ -44,57 +44,22 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Adjust the main content to account for the fixed banner height */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          marginTop: "50px", // Add spacing to avoid content being hidden behind the banner
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "40px",
-          }}
-        >
-          <Image src="/mayor.png" alt="Mayor Whiskers" width={400} height={400} />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "20px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+      <div className={styles.container}>
+        <div className={styles.contentWrapper}>
+          <Image
+            src="/mayor.png"
+            alt="Mayor Whiskers"
+            width={400}
+            height={400}
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+          <div className={styles.infoSection}>
+            <div className={styles.infoHeader}>
               <h1>Mayor Whiskers</h1>
-              <h4>I'm a stray cat</h4>
+              <h4>I&apos;m a stray cat</h4>
             </div>
-
             {/* Social Links */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "20px",
-              }}
-            >
+            <div className={styles.socialLinks}>
               <Link href="https://etherscan.io/token/0x6BE05eA23a6fe5bDDB1B249A2e484Fef0Aa40bC5">
                 <Image src="/etherscan.svg" alt="Etherscan" width={40} height={40} />
               </Link>
